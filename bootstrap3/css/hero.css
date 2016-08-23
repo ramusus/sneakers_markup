@@ -1,0 +1,15 @@
+.hero {
+    margin:0 -20px 40px;
+}
+
+    .hero__media-image {
+        width:100%;
+        object-fit:contain;
+    }
+    
+@media all and (min-width: 1200px) {
+    .hero {
+        margin-left:0;
+        margin-right:0;
+    }
+}

@@ -1,0 +1,9 @@
+.g-divider {
+    height:1px;
+    overflow:hidden;
+    background:#000000;
+}
+
+img {
+    max-width:100%;
+}

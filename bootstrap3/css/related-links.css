@@ -1,0 +1,19 @@
+.related-links {
+    margin-bottom:0.625rem;
+}
+
+    .related-links__header {
+        margin:2.5rem 0;
+    }
+    
+    .related-links__title {
+        margin:0;
+    }
+    
+    .related-links__item {
+        margin-bottom:0.625rem;
+    }
+    
+@media all and (min-width: 1200px) {
+    
+}

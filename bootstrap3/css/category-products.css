@@ -1,0 +1,12 @@
+.category-products {
+    margin-bottom:5rem;
+}
+
+    .category-products__item {
+    }
+    
+@media all and (min-width: 1200px) {
+    .category-products {
+        margin-left:0;
+    }
+}

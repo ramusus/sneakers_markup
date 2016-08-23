@@ -1,0 +1,34 @@
+.i {
+    display:block;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+
+.i_back {
+    width:12px;
+    height:21px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAVCAMAAABFcv+GAAAAHlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3KG9qAAAACnRSTlMAP+yzrYgrpHYfPvGFHQAAACFJREFUeAFjQABODgSbkYmRbmw2djYkV7CyMiABZhZ68wBMRwCSOpubDQAAAABJRU5ErkJggg==);
+}
+
+.i_fwd {
+    width:52px;
+    height:14px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAOCAMAAABXR88SAAAAG1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACUUeIgAAAACXRSTlMAPzaSHngtD6ytonp/AAAAJ0lEQVR4AWMgBTCxMJABmIexLnZGUgEHGxmamBlJdx4r06geNqgeADA9ANfKCHwNAAAAAElFTkSuQmCC);
+}
+
+@media only screen and ( -webkit-min-device-pixel-ratio: 1.3 ),
+       only screen and (    min--moz-device-pixel-ratio: 1.3 ),
+       only screen and (      -o-min-device-pixel-ratio: 2.6/2 ), /* returns 1.3, see Dev.Opera */
+       only screen and (         min-device-pixel-ratio: 1.3 ),
+       only screen and ( min-resolution: 124.8dpi ),
+       only screen and ( min-resolution: 1.3dppx ) {
+           
+    .i_back {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAqBAMAAABb64ZtAAAAHlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3KG9qAAAACXRSTlMA1BUXFPLfjCfX4J1CAAAALUlEQVQoz2NAACZBJI7iRCQJSSFkCYXhLcE+tQEpHDJFkDiGEx0QHGbJkSEFAASAFwcOHJkOAAAAAElFTkSuQmCC);
+    }
+
+    .i_fwd {
+    	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAAcBAMAAAB/gedFAAAAJFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACmWAJHAAAADHRSTlMAfxW8odV8CN4/sWqXFfGFAAAAPUlEQVQ4y2MgBbAxkAFYHMjQxG5CjlXFo1YNf6s4BUkFEgZkaBJuIsN9qQqk62ELGrVo1CIo4CbHIi6oRQCKzRH67mWIRAAAAABJRU5ErkJggg==);
+    }
+
+}
