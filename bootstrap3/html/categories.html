@@ -42,7 +42,7 @@
         
         <div class="flex-row row">
             <div class="col-lg-3">
-                <div class="aside-nav aside-nav_collapsed js-aside-nav">
+                <div class="aside-nav aside-nav_collapsed affix-top js-aside-nav">
                     <span class="aside-nav__close i i_back js-aside-nav-close" title="Close"></span>
                     <span class="aside-nav__toggle js-aside-nav-toggle">collections</span>
                     <ul class="aside-nav__list">
@@ -205,7 +205,7 @@
             </div>
         </div>
         
-        <div class="related-links">
+        <div class="related-links js-related-links">
 
             <div class="related-links__divider g-divider"></div>
             
@@ -282,10 +282,28 @@
         $('.js-aside-nav-toggle, .js-aside-nav-close, .aside-nav__link').click(function(){
             $('.js-backdrop').fadeToggle();
             $('.js-aside-nav').toggleClass('aside-nav_collapsed');
-        });		
+        });
+          
+        var $attribute = $('.js-aside-nav');
+        $attribute.each(function(){
+          $(this).affix({
+            offset: {
+              top: $(this).offset().top,
+              bottom: $('.js-related-links').outerHeight(true),
+            }
+          })
+        })
+        $(window).on("resize", function(){
+          $attribute.each(function(){
+            $(this).data('bs.affix').options.offset = $(this).offset().top
+          })
+        })
+            
+            
 	});			
         
     </script>
+    
 
   </body>
 </html>
