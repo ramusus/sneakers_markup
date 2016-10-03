@@ -1,0 +1,37 @@
+.choice-label {
+    padding-left:45px;
+    position:relative;
+    display:block;
+    margin-bottom:22px;
+}
+
+.choice-label:first-child {
+    margin-top:-4px;
+}
+
+.choice-label:last-child {
+    margin-bottom:27px;
+}
+
+    .choice-label__text {
+        font-size:30px;
+        line-height:1;
+        display:block;
+    }
+    
+    .choice-label__text-sm {
+        font-size:11px;
+        font-weight:700;
+        text-transform:uppercase;
+        display:block;
+        margin-bottom:1px;
+    }
+    
+    .choice-label__input {
+        position:absolute;
+        left:0;
+        bottom:0;
+        height:25px;
+        width:25px;
+        margin:0;
+    }
