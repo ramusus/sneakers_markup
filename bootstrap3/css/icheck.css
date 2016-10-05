@@ -1,0 +1,67 @@
+/* iCheck plugin Minimal skin, black
+----------------------------------- */
+.icheckbox,
+.iradio {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width:25px;
+    height:25px;
+    border: none;
+    cursor: pointer;
+}
+
+/*.icheckbox {
+    background-position: 0 0;
+    background: url(minimal.png) no-repeat;
+}
+    .icheckbox.hover {
+        background-position: -20px 0;
+    }
+    .icheckbox.checked {
+        background-position: -40px 0;
+    }
+    .icheckbox.disabled {
+        background-position: -60px 0;
+        cursor: default;
+    }
+    .icheckbox.checked.disabled {
+        background-position: -80px 0;
+    }
+*/
+
+.iradio {
+    border-radius:50%;
+    border:1px solid #000000;
+    background:#ffffff;
+    position:relative;
+}
+    .iradio.hover,
+    .iradio.checked {
+        background-color:#000000;
+        background-position:50%;
+        background-repeat:no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 31 21' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.203 16.484l-8-8.168c-.876-.867-2.125-.867-2.75 0-.624.742-.624 1.98.126 2.597l9.374 9.53c.75.743 1.873.743 2.623 0l16.875-17.2c.75-.744.75-2.105-.125-2.847-.75-.62-1.874-.494-2.624.248l-15.5 15.84z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+    .iradio.hover:after,
+    .iradio.checked:after {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        content:'';
+        border-radius:50%;
+        border:1px solid #ffffff;
+    }
+    .iradio.disabled {
+        cursor: default;
+    }
+    .iradio.checked.disabled {
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+}

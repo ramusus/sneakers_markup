@@ -23,6 +23,7 @@
     <link href="../css/related-links.css" rel="stylesheet">
     <link href="../css/feature-photo.css" rel="stylesheet">
     <link href="../css/backdrop.css" rel="stylesheet">
+    <link href="../css/icheck.css" rel="stylesheet">
     <link href="../css/choice-label.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -334,6 +335,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/icheck.min.js"></script>
 
     <script>
 	$(document).ready(function() {
@@ -356,6 +358,10 @@
             $(this).data('bs.affix').options.offset = $(this).offset().top
           })
         })
+        
+        $('input[type="radio"]').iCheck();
+        
+        
             
             
 	});			
