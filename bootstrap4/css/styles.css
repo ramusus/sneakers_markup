@@ -449,6 +449,7 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+  min-height:100%;
 }
 .popup-img-caption {
 	background:rgba(0,0,0,1);
@@ -487,4 +488,19 @@ body {
 	font-weight:700;
 	letter-spacing:0.125rem;
 	margin-left:10px;
+}
+.popup-react-spinner {
+    min-width:100%;
+    min-height:100%;
+    position:relative;
+    align-self:center;
+}
+.popup-react-spinner .react-spinner {
+  position: absolute;
+  margin:16px 0 0 16px;
+  -webkit-transform: translate(-50%,-50%);
+     -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+       -o-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
